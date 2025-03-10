@@ -1,0 +1,18 @@
+using System;
+using System.IO;
+
+namespace CountWords
+{
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			string fileName = "Department of Health";// writeing the text
+			File.WriteAllText("filename.txt", fileName);
+			
+			string readText = File.ReadAllText("filename.txt");// Reading the content
+			Console.WriteLine(readText);// outputingthe content
+		}
+	}
+}
+			
